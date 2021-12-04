@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="loader.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <!-- loader -->
+        <div id="loader"></div>
+        <!-- loader -->
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">sun<span class="span">i</span>l</a>
+                </div>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="menu">
+                    <li class="list__item">
+                        <a href="#home" class="list__links">Home</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#about" class="list__links">About</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#services" class="list__links">Services</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#skills" class="list__links">Skills</a>
+                    </li>
+                    <!-- <li class="list__item">
+                            <a href="#testimonials" class="list__links"
+                                >Testimonials</a
+                            >
+                        </li> -->
+                    <li class="list__item">
+                        <a href="#contact" class="list__links">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- home section -->
+        <section class="home" id="home">
+            <div class="home__container">
+                <div class="home_content">
+                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-2">Sunil Shrees</div>
+                    <div class="text-3">
+                        And I'm a <span class="typing"></span>
+                    </div>
+                    <a class="hire__me" href="#contact">Hire Me</a>
+                </div>
+                <div class="img__container">
+                    <svg
+                        class="home__blob"
+                        viewBox="0 0 200 187"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                        <mask id="mask0" mask-type="alpha">
+                            <path
+                                d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                            />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path
+                                d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                            />
+                            <image
+                                class="blob__img"
+                                x="-75"
+                                y="0"
+                                href="./images/profile-2.png"
+                            />
+                        </g>
+                    </svg>
+                    <!-- <img src="./images/profile-1.jpeg" alt="user" /> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about__container">
+                <h2 class="title">About me</h2>
+                <div class="details">
+                    <div class="img__container1">
+                        <img src="./images/profile-1.jpg" alt="user" />
+                    </div>
+                    <div class="details__content">
+                        <div class="about__text">
+                            I'm Sunil and I'm a
+                            <span class="typing-2"></span>
+                        </div>
+                        <p>
+                            I am a Web Designer/Front End Developer currently
+                            residing in Kathmandu, Nepal. I love to code,
+                            design, think. I'm seeking opportunity to enhance my
+                            knowledge and skills to become the best frontend
+                            Developer.
+                        </p>
+                        <a href="./images/Sunil-CV.pdf" download="sunil_cv"
+                            >Download CV</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="services__container">
+                <h2 class="services__title">My Services</h2>
+                <div class="services__content">
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-paint-brush"></i>
+                            <div class="card__text">Web Design</div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Molestiae esse repudiandae
+                                optio error cumque tempore inventore temporibus.
+                                Voluptate, cumque non! Quis possimus nostrum
+                                suscipit recusandae eveniet temporibus ratione
+                                expedita perspiciatis facere sapiente,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="card__text">Advertising</div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Molestiae esse repudiandae
+                                optio error cumque tempore inventore temporibus.
+                                Voluptate, cumque non! Quis possimus nostrum
+                                suscipit recusandae eveniet temporibus ratione
+                                expedita perspiciatis facere sapiente
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills -->
+        <section class="skills" id="skills">
+            <div class="skills__container">
+                <h2 class="skills__title">My skills</h2>
+                <div class="skills__details">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>React</span>
+                            <span>10%</span>
+                        </div>
+                        <div class="line react"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="contact" id="contact">
+            <div class="contact__container">
+                <h2 class="contact__title">Contact Me</h2>
+                <div class="contact__details">
+                    <form
+                        action="https://formsubmit.co/jamesshrees@gmail.com"
+                        method="POST"
+                    >
+                        <div class="fields">
+                            <div class="field name">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Name"
+                                    required
+                                />
+                            </div>
+                            <div class="field email">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="E-mail"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <textarea
+                            class="field textarea"
+                            cols="30"
+                            rows="10"
+                            placeholder="Leave your message...."
+                            name="message"
+                            required
+                        ></textarea>
+
+                        <div class="button">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer__container">
+                <div class="socials__container">
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-git"></i></a>
+                    </div>
+                </div>
+
+                <div class="copyrights">
+                    <span
+                        >Created by <a href="#">Sunil Shrees</a> |
+                        <span class="far fa-copyright"></span> 2020 All rights
+                        reserved.</span
+                    >
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
