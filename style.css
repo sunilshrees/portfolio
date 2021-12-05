@@ -613,7 +613,7 @@ html {
     margin-bottom: 6rem;
     position: relative;
 }
-.skills__title::before {
+/* .skills__title::before {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -635,7 +635,7 @@ html {
     color: crimson;
     background: #fff;
     transform: translateX(-50%);
-}
+} */
 .skills__details {
     width: 50%;
 }
