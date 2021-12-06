@@ -7,9 +7,9 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-html {
+/* html {
     overflow-x: hidden;
-}
+} */
 
 #loader {
     position: fixed;
@@ -23,11 +23,11 @@ html {
 /* navbar styling */
 
 .navbar {
-    height: 80px;
+    height: 10vh;
     font-size: 1.2rem;
     position: sticky;
     top: 0;
-    background: #181616;
+    background: #333333;
     z-index: 10;
     transition: 0.8s ease;
 }
@@ -87,25 +87,32 @@ html {
 
 /* responsive nav */
 
-@media (max-width: 840px) {
+@media screen and (max-width: 840px) {
+    body {
+        overflow-x: hidden;
+    }
     .menu {
-        position: absolute;
-        top: -1000px;
-        left: 0;
+        position: fixed;
+        top: 10vh;
+        right: 0px;
         background: #333333;
-        height: 100vh;
+        height: 90vh;
         width: 100%;
-        opacity: 1;
+        transform: translateX(100%);
+
+        display: flex;
         flex-direction: column;
-        transition: all 0.3s ease;
+        align-items: center;
+        justify-content: space-around;
+
+        transition: transform 0.3s ease;
     }
 
     .menu.active {
-        position: absolute;
-        top: 100%;
-        opacity: 1;
-        transition: all 0.3s ease;
-        height: 100vh;
+        transform: translateX(0%);
+    }
+    .list__item {
+        opacity: 0;
     }
 
     .navbar__toggle {
@@ -150,15 +157,15 @@ html {
 /* .home {
 } */
 .home {
-    background: #181616; /* fallback for old browsers */
+    background: #333333; /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to bottom,
-        #181616 0%,
+        #333333 0%,
         crimson 100%
     ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(
         to bottom,
-        #181616 0%,
+        #333333 0%,
         crimson 100%
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -884,5 +891,16 @@ footer {
 @media (max-width: 560px) {
     .scroll-up-btn.active {
         opacity: 0;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }

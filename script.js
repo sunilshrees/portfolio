@@ -4,9 +4,23 @@ const navBar = document.querySelector('.navbar');
 const span = document.querySelector('.span');
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.menu');
+const listItem = document.querySelectorAll('.list__item');
+
 menu.addEventListener('click', () => {
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
+
+    //animate links
+
+    listItem.forEach((link, index) => {
+        if (link.style.animation) {
+            link.style.animation = '';
+        } else {
+            link.style.animation = `navLinkFade 0.5s ease forwards ${
+                index / 7 + 0.1
+            }s `; //delay index le decide garxa
+        }
+    });
 });
 
 const stickyNav = () => {
@@ -50,6 +64,15 @@ menuLinks.addEventListener('click', () => {
     if (menuBars) {
         menu.classList.toggle('is-active');
         menuLinks.classList.remove('active');
+        listItem.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${
+                    index / 7 + 0.1
+                }s `; //delay index le decide garxa
+            }
+        });
     }
 });
 
