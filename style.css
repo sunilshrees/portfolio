@@ -23,7 +23,7 @@
 /* navbar styling */
 
 .navbar {
-    height: 10vh;
+    height: 8vh;
     font-size: 1.2rem;
     position: sticky;
     top: 0;
@@ -177,7 +177,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    height: 100vh;
+    height: 92vh;
 
     width: 100%;
     max-width: 1300px;
