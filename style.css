@@ -16,7 +16,7 @@
     width: 100%;
     height: 100vh;
     display: block;
-    background: #fff url(./images/Walk.gif) no-repeat center;
+    background: #fff url(./images/loader.gif) no-repeat center;
     z-index: 999999;
 }
 
@@ -187,8 +187,10 @@
 .home_content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     color: #fff;
-    width: 50%;
+    width: 100%;
+    height: 100%;
 }
 .home__blob {
     /* width: 200px; */
@@ -199,9 +201,10 @@
 }
 .img__container {
     text-align: center;
-    height: 500px;
-    width: 50%;
-    border-radius: 4px;
+
+    width: 75%;
+    /* height: 50%; */
+    /* border-radius: 4px; */
 }
 
 .img__container img {
