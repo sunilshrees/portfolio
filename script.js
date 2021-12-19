@@ -100,3 +100,36 @@ function myFunction() {
     preLoader.style.display = 'none';
 }
 window.addEventListener('load', myFunction);
+
+//scroll reveal
+
+ScrollReveal({ reset: true, distance: '100px', duration: 1000, delay: 300 });
+
+ScrollReveal().reveal('.card-1', {
+    delay: 300,
+    origin: 'left',
+});
+ScrollReveal().reveal('.card-2', {
+    delay: 300,
+    origin: 'right',
+});
+ScrollReveal().reveal('.img__container1', {
+    delay: 300,
+    origin: 'bottom',
+});
+
+ScrollReveal().reveal('.name', {
+    delay: 300,
+    origin: 'left',
+    distance: '80px',
+});
+ScrollReveal().reveal('.email', {
+    delay: 300,
+    origin: 'right',
+    distance: '80px',
+});
+ScrollReveal().reveal('.textarea', {
+    delay: 200,
+    origin: 'bottom',
+    distance: '80px',
+});
