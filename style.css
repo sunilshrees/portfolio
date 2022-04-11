@@ -399,7 +399,7 @@
 .details__content p {
     text-align: justify;
 }
-.details__content a {
+.details__content button {
     text-decoration: none;
     display: inline-block;
     background: crimson;
@@ -408,17 +408,18 @@
     font-weight: 400;
     padding: 5px 30px;
     margin-top: 20px;
+    border: none;
     border-radius: 6px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
-.details__content a:hover {
+.details__content button:hover {
     background: #fff;
     color: crimson;
     transition: all 0.3s ease;
 }
-.details__content a:active {
+.details__content button:active {
     transform: scale(0.9);
 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.375);
