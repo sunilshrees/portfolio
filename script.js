@@ -133,3 +133,20 @@ ScrollReveal().reveal('.textarea', {
     origin: 'bottom',
     distance: '80px',
 });
+
+ScrollReveal().reveal('.info-1', {
+    delay: 300,
+    origin: 'left',
+});
+ScrollReveal().reveal('.info-2', {
+    delay: 300,
+    origin: 'right',
+});
+ScrollReveal().reveal('.info-3', {
+    delay: 300,
+    origin: 'left',
+});
+ScrollReveal().reveal('.info-4', {
+    delay: 300,
+    origin: 'right',
+});
